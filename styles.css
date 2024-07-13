@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your preference */
+    height: auto;
+}
+
+.info {
+    font-size: 18px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .videos {
+        flex-direction: column;
+    }
+    
+    video {
+        max-width: 100%;
+    }
+}
